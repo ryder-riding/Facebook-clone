@@ -48,14 +48,33 @@ include ('header.php');
                             </h3>
                             <form action="" method="POST">
                                 <div class="form-group">
-                                    <textarea placeholder="Enter Feedback" class="form-control" id="" cols="30" rows="5" name="des"></textarea>
+                                    <textarea placeholder="Enter Feedback" class="form-control" id="" cols="30" rows="5" name="feed"></textarea>
+                                </div>
+                                <div class="form-group" >
+                                    <button class="btn btn-primary" name="feed_btn">Send Feedback</button>
                                 </div>
                             </form>
+                            <?php
+                                if(isset($_POST['feed_btn']))
+                                {
+                                  $id = $_SESSION['user_id'];
+                                  $feedback = $_POST['feed'];
+                                  $query = "INSERT INTO feedback (user_feedback,user_id) VALUES('$feedback','$id')";
+                                  $insert = mysqli_query($connection,$query);
+                                  if($insert)
+                                  {
+                                    echo "<script>alert('Feedback Added');document.location='feedback_list.php'</script>";
+                                  }
+                                } 
+                                // else{
+                                //   echo "no";
+                                // }
+                            ?>
                         </div>
                     </div>
                 </div>
               </div>
-
+                
 
               <!-- Color System -->
               <div class="row">

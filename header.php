@@ -97,6 +97,11 @@ session_start();
           <span>Feedback</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="feedback_list.php">
+        <i class="fas fa-comments"></i>
+          <span>All Feedbacks</span></a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="post.php">
         <i class="fas fa-phone"></i>
           <span>Contact Me</span></a>
