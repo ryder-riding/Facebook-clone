@@ -25,7 +25,7 @@ include ('header.php');
               <!-- Project Card Example -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-success">Profile</h6>
+                  <h6 class="m-0 font-weightbold text-success">Profile</h6>
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -59,11 +59,9 @@ include ('header.php');
                       <div class="col-lg-6 text-center col-sm-12" style="margin-left: 250px;">
                         <h4>
                               Description
-                              <p>
-                                   <?php
-                                        echo $des
-                                  ?>
-                              </p>
+                              <div class="form-group col-lg-12" style="margin-top: 20px;">
+                              <input disabled placeholder="Enter New Name" value="<?php echo $des; ?>"  type="text" name="name" class="form-control" style="background-color: white;" id="">
+                              </div>
                             </h4>
                         </div>
                         <div class="mb-12" style="margin-top:-100px;">

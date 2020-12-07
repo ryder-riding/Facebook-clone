@@ -49,12 +49,7 @@ include ('header.php');
                 </h6>
                   <h6 class="text-center">
                   <span class="attention">
-                      *If you want to update only one value enter the same value for rest of them*
-                  </span>
-                  </h6>
-                  <h6 class="text-center">
-                  <span class="attention">
-                      *Also please logout and login to apply changes to your name*
+                      *Please logout and login to apply changes to your name*
                   </span>
                   </h6>
                     

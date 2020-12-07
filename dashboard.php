@@ -22,11 +22,11 @@ include ('header.php');
 
             <!-- Project Card Example -->
             <div class="card shadow mb-4">
-              <div class="card-header py-3">
+              <div style="background-color: #aee6e6;" class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-success">Home</h6>
               </div>
-              <div class="card-body">
-                  <div class="row">
+              <div style="background-color: #bedcfa;" class="card-body">
+                  <div  class="row">
                   <?php
                     $user_id = $_SESSION['user_id'];
                     $posts = "SELECT * FROM posts";
@@ -42,13 +42,15 @@ include ('header.php');
                         $img = $row['post_img'];
                         $date = $row['post_date'];
                         ?>
-                        <h4>
+                        <div class="col-lg-12">
+                          <h4 style="color:#00b7c2;" class="text-center">
                           Title : <?php echo $title; ?>
-                        </h4>
+                          </h4>
+                        </div>
                         <div class="col-lg-12" style="padding: 15px;">
                     <div class="row">
                         <div class="col-lg-4" style="margin-left: -8px;">
-                            <img width="300px" height="200px" src="post_images/<?php echo $img;?>" alt="">
+                            <img class="rounded-circle" width="300px" height="200px" src="post_images/<?php echo $img;?>" alt="">
                         </div>
                         <div class="col-lg-8">
                             
@@ -56,15 +58,15 @@ include ('header.php');
                             <br>
                             <br>
                             <div style="margin-top: -30px;">
-                            <h3>Description</h3>
-                            <h4 class="form-control" style="height: 100px;">
+                            <h3 style="color: #98acf8;">Description</h3>
+                            <h4 class="form-control" style="height: 100px; background-color: #cffffe;">
                                 <?php echo $des?>
                             </h4>
                             </div>
                             
                             
                         </div>
-                        <p style="margin-left: 3px;">
+                        <p style="margin-left: 5px; color:#93b5e1 ;">
                                 Date : <?php echo $date?>
                             </p>
                                          

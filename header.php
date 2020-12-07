@@ -79,7 +79,7 @@ session_start();
           <span>My Requests</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="my_friends.php">
+        <a class="nav-link" href="Construction.php">
         <i class="fas fa-praying-hands"></i>
           <span>My Friends</span></a>
       </li>
@@ -97,12 +97,12 @@ session_start();
           <span>Feedback</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="feedback_list.php">
+        <a class="nav-link" href="Construction.php">
         <i class="fas fa-comments"></i>
           <span>All Feedbacks</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="post.php">
+        <a class="nav-link" href="Construction.php">
         <i class="fas fa-phone"></i>
           <span>Contact Me</span></a>
       </li>
